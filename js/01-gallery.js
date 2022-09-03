@@ -43,7 +43,6 @@ function onParentClick(evt) {
   };
   ligthBoxShow.close();
 });
-
 };
 
 
