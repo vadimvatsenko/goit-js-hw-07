@@ -30,25 +30,25 @@ function onParentClick(evt) {
     return;
   }
   // ссылка на текущий data-source
-  basicLightbox.create(`
-		<img src = '${evt.target.dataset.source}' alt = '${evt.target.alt}' width = 1140/>
-	`).show()
+  const ligthBoxShow = basicLightbox.create(`
+		<img src = '${evt.target.dataset.source}' alt = '${evt.target.alt}'/>
+	`);
+
+  ligthBoxShow.show();
+
+  document.addEventListener("keydown", event => {
+  console.log(event.code);//Код клавиатуры
+  if (event.code !== 'Escape') {
+    return;
+  };
+  ligthBoxShow.close();
+});
+
 };
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
