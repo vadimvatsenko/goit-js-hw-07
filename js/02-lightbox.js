@@ -18,8 +18,12 @@ const getGalleryItems = galleryItems.map(({ preview, original, description }) =>
 
 getGallery.insertAdjacentHTML("afterbegin", getGalleryItems);
 
-
 let lightbox = new SimpleLightbox('.gallery .gallery__item', {
-    heightRatio: 0.8,
-
+  heightRatio: 0.8,
+  captionsData: 'alt',
+  captionDelay: 250,
 });
+
+
+
+

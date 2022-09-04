@@ -24,7 +24,6 @@ getGallery.addEventListener('click', onParentClick);
 function onParentClick(evt) {
   // запрет перехода по ссылке
   evt.preventDefault();
-  console.log('onParentClick -> evt.target', evt.target);
   // если не равно классу - пропустить
   if (evt.target.className !== 'gallery__image') {
     return;
